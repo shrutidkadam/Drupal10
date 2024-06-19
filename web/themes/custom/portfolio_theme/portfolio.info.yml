@@ -1,0 +1,5 @@
+name: Portfolio
+type: theme
+description: create portfolio theme
+core_version_requirement: ^9
+base theme: 'bartik'

@@ -1,0 +1,27 @@
+ashburn_controller:
+  path: '/ashurn-link'
+  defaults:
+    _controller: '\Drupal\ashburn_module\Controller\AshburnController::renderContent'
+    _title: 'Custom page'
+  requirements:
+    _permission: 'access content'
+
+ashburn_form:
+  path: '/ashburn-form'
+  defaults:
+    _form: '\Drupal\ashburn_module\Form\ClimateForm'
+    _title: 'Climate Form'
+  requirements:
+    _permission: 'access content'
+
+ashburn_dynamic:
+  path: '/ashburn-mod/{var1}/{node}'
+  defaults:
+    _controller: '\Drupal\ashburn_module\Controller\AshburnPrint::printContent'
+    _title: 'Synamic title'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      node:
+        type: entity:node

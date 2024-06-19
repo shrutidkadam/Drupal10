@@ -1,0 +1,10 @@
+services:
+  ashburn_service_climate:
+    class: '\Drupal\ashburn_module\services\ClimateService'
+
+#  custom_exports_service:
+#    class: '\Drupal\custom_exports\EventSubscriber\ConfigEventsSubscriber'
+#    tags:
+#      - { name: 'event_subscriber' }
+
+

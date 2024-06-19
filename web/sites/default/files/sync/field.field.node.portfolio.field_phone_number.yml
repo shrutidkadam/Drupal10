@@ -1,0 +1,37 @@
+uuid: 0df7e88d-96d9-4dc2-97dd-eee2d9f83669
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_number
+    - node.type.portfolio
+  module:
+    - mobile_number
+id: node.portfolio.field_phone_number
+field_name: field_phone_number
+entity_type: node
+bundle: portfolio
+label: 'Phone number'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    verification_token: null
+    verification_code: null
+    country-code: US
+    mobile: '6232937560'
+    tfa: 0
+    value: '+16232937560'
+    country: US
+    local_number: '6232937560'
+    verified: 0
+default_value_callback: ''
+settings:
+  verify: none
+  countries:
+    US: US
+  message: |-
+    Your verification code from !site_name:
+    !code
+field_type: mobile_number

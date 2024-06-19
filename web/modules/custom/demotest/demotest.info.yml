@@ -1,0 +1,4 @@
+name: 'Demo Test Module'
+type: module
+core_version_requirement: ^9 || ^10
+description: 'DEMO MODULE FOR DEMO PURPOSES'

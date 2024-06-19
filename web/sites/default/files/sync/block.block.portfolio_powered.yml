@@ -1,0 +1,31 @@
+uuid: edca3da2-ec85-453f-ac1d-46a1e1aaa2e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - portfolio
+_core:
+  default_config_hash: I6Esh8cDlPdl2POZg4MOSRUrQNYA1UNCJCxL2yqT_wc
+id: portfolio_powered
+theme: portfolio
+region: sidebar_first
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      page: page

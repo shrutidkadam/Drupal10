@@ -1,0 +1,5 @@
+name: 'Ashnurn Custom Module'
+version: 0.0.0
+description: 'Create a custom module'
+type: module
+core_version_requirement: ^9 || ^10

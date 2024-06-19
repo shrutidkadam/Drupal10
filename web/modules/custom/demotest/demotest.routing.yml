@@ -1,0 +1,7 @@
+demotest.configform:
+  path: '/admin/config/democonfig'
+  defaults:
+    _form: '\Drupal\demotest\Form\DemoConfig'
+    _title: 'Demo config form'
+  requirements:
+    _permission: 'access content'

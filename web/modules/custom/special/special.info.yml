@@ -1,0 +1,4 @@
+name: special module
+description: 'Special Node Module'
+type: module
+core_version_requirement: ^10

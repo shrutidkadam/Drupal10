@@ -1,0 +1,40 @@
+uuid: 23183452-6081-4a1a-a5e6-01323ddeed99
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.projects.body
+    - field.field.node.projects.field__project_url
+    - field.field.node.projects.field_date
+    - field.field.node.projects.field_project_insight
+    - field.field.node.projects.field_project_name
+    - field.field.node.projects.field_type
+    - node.type.projects
+  module:
+    - text
+    - user
+id: node.projects.teaser
+targetEntityType: node
+bundle: projects
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field__project_url: true
+  field_date: true
+  field_project_insight: true
+  field_project_name: true
+  field_type: true
