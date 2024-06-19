@@ -17,11 +17,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *  )
  */
 
-//#[Block(
-//  id: "hello_block",
-//  admin_label: new TranslatableMarkup("Hello block"),
-//  category: new TranslatableMarkup("Hello World")
-//)]
+
 class UserBlock extends BlockBase implements ContainerFactoryPluginInterface {
 
   protected $currentUser;
